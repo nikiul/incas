@@ -1,0 +1,125 @@
+.opening {
+    position: relative;
+    padding-top: 143px;
+    background-image: url('../img/opening/opening-bg.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+
+    @media (max-width: 700px) {
+        padding-top: 70px;
+    }
+
+    &::before {
+        content: url('../img/base-img/leaf1.png');
+        position: absolute;
+        top: 66px;
+        right: 130px;
+        transform: rotate(105deg);
+
+        @media (max-width: 700px) {
+            content: none;
+        }
+    }
+}
+
+.opening__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 1070px) {
+        flex-direction: column;
+    }
+}
+
+.opening__left {
+
+    @media (max-width: 1070px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 20px;
+    }
+
+    img {
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+}
+
+.opening__right {
+    position: relative;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 1;
+
+    @media (max-width: 1070px) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 700px){
+        width: 100%;
+    }
+}
+
+.opening__title {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    color: #2A2D36;  
+    
+    @media (max-width: 1070px) {
+        display: none;
+    }
+}
+
+.opening__title--mobile {
+    display: none;
+
+    @media (max-width: 1070px) {
+        position: relative;
+        display: block;
+        text-align: center;
+        z-index: 1;
+
+        br {
+            display: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+}
+
+.opening__desc {
+    margin-bottom: 1em;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 130%;
+    color: #606678;
+
+    @media (max-width: 500px) {
+        font-size: 16px;
+    }
+
+    span {
+        font-weight: 500;
+        color: #2A2D36;
+    }
+}

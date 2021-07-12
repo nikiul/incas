@@ -1,0 +1,137 @@
+.advantages {
+    background-image: url('../img/advantages/advantages-bg.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    @media (max-width: 740px) {
+        background: none;
+    }
+}
+
+.advantages__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages__title {
+    margin-bottom: 80px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 135%;
+    text-align: center;
+    color: #2A2D36;
+
+    @media (max-width: 650px) {
+        margin-bottom: 40px;
+        font-size: 23px;
+    }
+    
+    span {
+        color: #C84E89;
+    }
+}
+
+.advantages__img-wrap {
+    margin-bottom: 80px;
+    width: 100%;
+
+    @media (max-width: 650px) {
+        display: none;
+    }
+
+    img {
+        width: 100%;    
+    }
+}
+
+.advantages__elems-wrap {
+    display: none;
+
+    @media (max-width: 650px) {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.advantages__elem {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(138, 194, 235, 0.12);
+    border-radius: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.advantages__elem-top {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: #2A2D36;
+    }
+}
+
+.advantages__elem-desc {
+    font-size: 16px;
+    line-height: 140%;
+    color: #606678;    
+}
+
+.advantages__important {
+    padding: 35px 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 701px;
+    position: relative;
+    background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
+    border-radius: 30px;
+    text-align: center;
+
+    @media (max-width: 740px) {
+        width: 95%;
+    }
+
+    @media (max-width: 500px) {
+        padding: 30px 15px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        bottom: -10px;
+        left: -10px;
+        right: -10px;
+        border-radius: 40px;
+        border: 2px solid #F15F79;
+        background-color: transparent;
+        z-index: 0;
+    }
+}
+
+.advantages__bottom {
+    background-image: url('../img/advantages/advantages-bottom.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    bottom: -2px;
+    width: 100%;
+    height: 177px;
+}

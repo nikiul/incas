@@ -1,0 +1,199 @@
+.none {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.btn {
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        background: linear-gradient(90deg, #F15F79 0%, #C84E89 100%);
+        box-shadow: 0px 20px 20px rgba(241, 95, 121, 0.31);
+    }
+}
+
+.btn--grey {
+    padding: 14px 20px;
+    background: #EAEEFA;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: #939FBB;
+    text-decoration: none;
+
+    @media (max-width: 500px) {
+        padding: 8px 15px;
+        font-size: 9px;
+    }
+}
+
+.btn--colored {
+    padding: 22px 70px;
+    background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
+    box-shadow: 0px 20px 20px rgba(201, 78, 136, 0.3);
+    border-radius: 71px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+input {
+    background: rgba(198, 205, 224, 0.36);
+    border-radius: 12px;    
+    border: none;
+    outline: none;
+    color: #2A2D36;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 100%;
+        color: #989EAE;
+    }
+
+    &::-webkit-input-placeholder {
+        font-size: 16px;
+        line-height: 100%;
+        color: #989EAE;
+    } 
+
+    &::-moz-placeholder {
+        font-size: 16px;
+        line-height: 100%;
+        color: #989EAE;
+    }
+}
+
+.form__country {
+    display: block;
+    width: 180px;
+    background: rgba(198, 205, 224, 0.36);
+    border-radius: 12px;    
+    border: none;
+    outline: none;
+    border-radius: 12px;    
+    position: relative;
+    background-image: url('../img/form/form-icon1.svg');
+    background-repeat: no-repeat;
+    background-position: 22px;
+
+    &:focus {
+        background-image: url('../img/form/form-icon1-colored.svg');
+    }
+}
+.country__current {
+    padding-left: 50px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+.country-icon {
+    width: 100px;
+    height: 100px;
+}
+.country-current__elem {
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 100%;
+    color: #989EAE;
+}
+.country-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 40%;
+    right: 15px;
+    transform: translate(-50%, -20%);
+}
+.country__list {
+    margin-top: 3px;
+    display: none;
+    z-index: 4;
+    position: absolute;
+    background-color: #eceef7;
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    border-radius: 10px;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.country__elem {
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 52px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    line-height: 100%;
+    color: #989EAE;
+
+    &:hover {
+        background-color: rgba(183, 214, 235, 0.644);
+    }
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+.input__name,
+.input__number {
+    width: 180px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+}
+
+.input__name {
+    background-image: url('../img/form/form-icon2.svg');
+    background-repeat: no-repeat;
+    background-position: 22px;
+
+    &:focus {
+        background-image: url('../img/form/form-icon2-colored.svg');
+    }
+}
+
+.input__number {
+    background-image: url('../img/form/form-icon3.svg');
+    background-repeat: no-repeat;
+    background-position: 22px;
+
+    &:focus {
+        background-image: url('../img/form/form-icon3-colored.svg');
+    }
+}

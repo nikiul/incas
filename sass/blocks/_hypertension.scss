@@ -1,0 +1,187 @@
+.hypertension {
+    position: relative;
+    // padding-top: 540px;
+    padding-bottom: 150px;
+    background-image: url('../img/hypertension/hypertension-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        padding-bottom: 88px;
+    }
+
+    &::before {
+        content: url('../img/base-img/leaf1.png');
+        position: absolute;
+        top: 390px;
+        left: 300px;
+        transform: rotate(105deg);
+
+        @media (max-width: 768px) {
+            content: none;
+        }
+    }
+
+    &::after {
+        content: url('../img/base-img/leaf3.png');
+        position: absolute;
+        bottom: -100px;
+        left: 300px;
+        z-index: 2;
+
+        @media (max-width: 768px) {
+            content: none;
+        }
+    }
+}
+
+.hypertension__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hypertension__title {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 135%;
+    text-align: center;
+    color: #2A2D36;
+
+    @media (max-width: 500px) {
+        font-size: 22px;
+    }
+}
+
+.hypertension__desc {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+    @media (max-width: 810px) {
+        justify-content: space-around;
+    }
+
+    @media (max-width: 760px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 40px;
+    }
+}
+
+.hypertension__desc-left,
+.hypertension__desc-right {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+
+    @media (max-width: 760px) {
+        width: 100%;
+    }
+
+    p {
+        margin-bottom: 1em;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 140%;
+        color: #606678;
+
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
+
+        span {
+            font-weight: 500;
+            color: #2A2D36;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.hypertension__desc-left {
+    @media (max-width: 500px) {
+        margin-bottom: 30px;
+    }
+}
+
+.hypertension__important {
+    padding: 35px 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    position: relative;
+    background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
+    border-radius: 30px;
+    text-align: center;
+
+    @media (max-width: 750px) {
+        width: 95%;
+    }
+
+    @media (max-width: 500px) {
+        padding: 30px 15px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        bottom: -10px;
+        left: -10px;
+        right: -10px;
+        border-radius: 40px;
+        border: 2px solid #F15F79;
+        background-color: transparent;
+        z-index: 0;
+    }
+
+    &::after {
+        content: url('../img/hypertension/hypertension-before.png');
+        position: absolute;
+        left: -300px;
+        top: -70px;
+        z-index: -1;
+
+        @media (max-width: 1200px) {
+            content: none;
+        }
+    }
+}
+
+.important__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 130%;
+    color: #FFFFFF;
+
+    @media (max-width: 500px) {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+}
+
+.important__desc {
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+
+    @media (max-width: 500px) {
+        font-size: 13px;
+    }
+
+    br {
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+}
